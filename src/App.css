@@ -1,0 +1,160 @@
+.container {
+  max-width: 375px;
+  padding-inline: 55px 56px;
+  margin-inline: auto;
+}
+
+.hide {
+  display: none;
+}
+
+.cart {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 7px 2px #00000008;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  
+
+  h6 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    padding-top: 8px;
+    
+  }
+  span {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    padding-bottom: 8px;
+  }
+}
+
+.cart-inner {
+  padding: 24px 24px 46px 24px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 4px 0px #0000000E;
+  background: #FFFFFF;
+  padding: 30px 16px;
+  position: sticky;
+  top: 0;
+
+  h1 {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 20px;
+  }
+  button {
+    border: none;
+    background-color: #FFFFFF;
+    font-family: Nunito Sans;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16.37px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+}
+
+.input-group {
+  padding-inline: 24px;
+  margin-block: 24px;
+  
+
+  select {
+   width: 200px;
+   padding: 14px 24px;
+   border: none;
+   background-color: #FFFFFF;
+   box-shadow: 0px 2px 9px 0px #0000000E;
+   border-radius: 5px;
+   margin-top: 40px;
+
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    box-shadow: 0px 2px 9px 0px #0000000E;
+    border-radius: 5px;
+    background: url('/assets/img/search-icon.svg') no-repeat;
+    background-position: 6%; 
+    padding: 16px 58px;
+
+  }
+}
+
+@media (width >= 768px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 75px;
+  }
+
+  .container {
+    max-width: 1440px;
+    padding-inline: 80px;
+  }
+
+  .cart {
+    height: fit-content;
+
+    img {
+      height: 150px;
+      width: 100%;
+      object-fit: fill;
+    }
+  }
+
+  .input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 80px;
+
+    input {
+      width: 480px;
+    }
+  }
+}
+
+/* dark mode */
+.dark {
+  background-color: #202C36;
+  color: #FFFFFF;
+  .cart {
+    background: #202C36;
+   
+  }
+  header {
+    background: #2B3844;
+    button {
+      background: #2B3844;
+      color: #FFFFFF;
+    }
+  } 
+  .input-group {
+    input {
+      color: #FFFFFF;
+      background-color: #2B3844;
+    }
+    select {
+      background-color: #2B3844;
+      color: #FFFFFF;
+    }
+  }
+}
